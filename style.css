@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f5f0;
+    color: #222;
+}
+
+
+/* NAVBAR */
+
+header {
+    background-color: #24140d;
+    padding: 18px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: #f4b942;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #f4b942;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 550px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)),
+        url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+
+/* BUTTON */
+
+button {
+    background-color: #f4b942;
+    color: #24140d;
+
+    border: none;
+
+    padding: 13px 28px;
+
+    border-radius: 5px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #24140d;
+    color: white;
+}
+
+
+/* SECTIONS */
+
+section {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+section h2 {
+    color: #9b5c20;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+section > p {
+    max-width: 800px;
+    margin: auto;
+}
+
+
+/* MENU */
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+    flex-wrap: wrap;
+
+    margin-top: 35px;
+}
+
+.menu-card {
+    width: 260px;
+
+    background-color: white;
+
+    padding: 30px 20px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+.menu-card h3 {
+    color: #24140d;
+    margin-bottom: 12px;
+}
+
+.menu-card p {
+    margin-bottom: 15px;
+}
+
+.menu-card span {
+    color: #9b5c20;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* OFFER */
+
+#offers {
+    background-color: #24140d;
+    color: white;
+}
+
+#offers h2 {
+    color: #f4b942;
+}
+
+.offer-box {
+    max-width: 600px;
+    margin: auto;
+
+    padding: 35px;
+
+    border: 2px solid #f4b942;
+
+    border-radius: 10px;
+}
+
+.offer-box h3 {
+    color: #f4b942;
+    margin-bottom: 15px;
+}
+
+
+/* CONTACT */
+
+#contact {
+    background-color: #eee5da;
+}
+
+#contact p {
+    margin: 10px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #24140d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 35px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+}
